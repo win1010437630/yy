@@ -51,6 +51,7 @@ body{
 	border-color: #f1f1f2;
 	transition: top .3s ease-in-out;
 	top:100%;
+	z-index: 10;
 }
 .nav li .nav_list p{
 	width:225px; 

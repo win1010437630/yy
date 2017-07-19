@@ -1,0 +1,148 @@
+.section_inner{
+	width:950px;
+	margin: 0 auto;
+}
+
+
+
+
+.history_title{
+	padding-top: 28px;
+	text-align: center;
+	margin: 0 auto;
+	font-family: 'dinbold', Arial, Helvetica, sans-serif;
+}
+.history_title h2{
+	height: 44px;
+	line-height: 44px;
+	font-weight: 100;
+    font-size: 40px;
+}
+.history_title h3{
+	color: #B0B0B0;
+	font-size: 24px;
+	font-weight: 100;
+    line-height: 28px;
+}
+.history_time_box{
+    margin: 20px 0 35px;
+    position: relative;
+    max-width: 100%;
+}	
+.time_border{
+	position: absolute;
+    left: 50%;
+    margin-left: 0;
+    height: 100%;
+    border-right: 1px solid #d0d0d0;
+    border-right-color: #e2231a;
+}
+.time_box{
+	
+}
+.time_first{
+    width: calc(50% - 19px);
+	border: 0px solid rgb(226, 35, 26);
+    padding: 0 0 20px 0;
+    margin-bottom: 20px;
+    position: relative;
+}
+.time_circular{
+	width:12px;
+	height: 12px;
+	position: absolute;
+	border-radius: 50%;
+	background-image: url(img/timeline-moment-icon.png);
+	background-size: 12px 12px;	
+}
+.time_cir{
+	width:18px;
+	height: 18px;
+	border-radius: 50%;
+	position: absolute;
+	left: -9px;
+	background-image: url(img/timeline-moment-icon.png);
+	background-size: 18px 18px;	
+}
+.time_cir{
+	bottom: 0;
+}
+.timeline{
+	position: absolute;
+	padding:15px 15px 15px 30px;
+	line-height: 24px;
+	font-size: 13px;
+	vertical-align: top;
+    display: inline-block;
+	position: relative;
+}
+.timeline_left{text-align: right;}
+.timeline_right{text-align: left;}
+.timeline h2{
+	color: #E2231A;
+    font-size: 48px;
+    line-height: 48px;
+    margin: 0 07px;
+    font-family: 黑体,STHeiti,'dinregular', Arial, Helvetica, sans-serif;
+}
+.timeline h3{
+	font-size: 21px;
+    line-height: 26px;
+    margin: 5px 0;
+    font-weight: normal;
+    font-family: 黑体,STHeiti,'dinbold', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+.time_first .time_circular{
+	top: 32px;
+	right:-25px;
+}
+.time_second{
+	margin-top: 17px;
+	width: calc(50% - 19px);
+	border: 0px solid rgb(226, 35, 26);
+    padding: 0 0 20px 0;
+    margin-bottom: 20px;
+    position: relative;
+}
+.time_second .time_circular{
+	top:32px;
+	left:-25px;
+}
+.timeline .sixity{
+	font-size: 16px;
+	line-height: 24px;
+}
+.timeline img{margin-top: 5px;}
+.timeline a{color: #E2231A;}
+.fisrt_top{ margin-top: 50px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

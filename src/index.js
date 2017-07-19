@@ -8,6 +8,8 @@ import Home from './Home';
 import Works from './Works';
 import Contant from './Contant';
 import Vision from './Vision';
+import History from './History';
+import Team from './Team';
 import logo from './img/logo_ogilvy_sm.png';
 import searchOne from './img/search_1.png';
 import searchTwo from './img/search_2.png';
@@ -18,50 +20,52 @@ const Basic = () => (
   <Router>
     <div className='wrap'>
       <div className='header clear'>
-      	<a className='logo left'><img src={logo}/></a>
-      	<ul className='nav left'>      
-	      <li><Link to="/">主页</Link></li>
-	      <li>
+        <a className='logo left'><img src={logo}/></a>
+        <ul className='nav left'>      
+        <li><Link to="/">主页</Link></li>
+        <li>
           <a href='javascript:;'>作品</a>
           <div className='nav_list'>
             <p><Link to="/works">作品</Link></p>
             <p><Link to="/point">奥美观点</Link></p>
           </div>
         </li>
-	      <li><Link to="/service">我们的服务</Link></li>
-	      <li><a href='javascript:;'>关于奥美</a>
+        <li><Link to="/service">我们的服务</Link></li>
+        <li><a href='javascript:;'>关于奥美</a>
           <div className='nav_list'>
             <p><Link to="/vision">奥美愿景</Link></p>
             <p><Link to="/history">奥美中国历史</Link></p>
             <p><Link to="/team">我们的领导团队</Link></p>
           </div>
         </li>
-	      <li>
+        <li>
           <a href='javascript:;'>奥美新闻</a>
           <div className='nav_list'>
             <p><Link to="/press">新闻稿</Link></p>
             <p><Link to="/live">奥美生活</Link></p>
           </div>
         </li>
-	      <li><Link to="/contant">联系我们</Link></li>
-	    </ul>
-	    <div className='right header_inner'>
-	    	<a className='search left'><img src={searchOne}/></a>
-	    	<div className='select right'>
-	    		<ul>
-	    			<li>
-	    				<a href="#">CN</a>
-	    				<ul className='lang'>
-		    				<li><a>EN</a></li>
-		    			</ul>
-	    			</li>
-	    		</ul>
-	    	</div>
-	    </div>
+        <li><Link to="/contant">联系我们</Link></li>
+      </ul>
+      <div className='right header_inner'>
+        <a className='search left'><img src={searchOne}/></a>
+        <div className='select right'>
+          <ul>
+            <li>
+              <a href="#">CN</a>
+              <ul className='lang'>
+                <li><a>EN</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
       </div>   
       <Route exact path="/" component={Home}/>
       <Route path="/works" component={Works}/>
       <Route path="/vision" component={Vision}/>
+      <Route path="/history" component={History}/>
+      <Route path="/team" component={Team}/>
       <Route path="/service" component={Topics}/>
       <Route path="/contant" component={Contant}/>
       <div className='footer_box'>
