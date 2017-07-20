@@ -7,11 +7,14 @@ import './common.css';
 import './index.css';
 import Home from './Home';
 import Works from './Works';
-import Contant from './Contant';
+import Points from './Points';
+import Servies from './Servies';
 import Vision from './Vision';
 import History from './History';
 import Team from './Team';
+import Press from './Press';
 import Live from './Live';
+import Contant from './Contant';
 import logo_1 from './img/logo_ogilvy_sm_white.png';
 import logo_2 from './img/logo_ogilvy_sm.png';
 import searchOne from './img/search_1.png';
@@ -28,7 +31,14 @@ class Better extends Component {
     }
   }  
   componentDidMount(){
-
+    $.ajax({
+      url:'http://localhost:8005/text',
+      type:'get',
+      success:function(opt){
+        console.log(opt)
+        this.setState({arr:opt});
+      }.bind(this)
+   })
   }
   change(e){
     var header=document.querySelector('#header');
@@ -95,10 +105,10 @@ class Better extends Component {
           <a href='javascript:;'>作品</a>
           <div className='nav_list'>
             <p><Link to="/works">作品</Link></p>
-            <p><Link to="/point">奥美观点</Link></p>
+            <p><Link to="/points">奥美观点</Link></p>
           </div>
         </li>
-        <li><Link to="/service">我们的服务</Link></li>
+        <li><Link to="/servies">我们的服务</Link></li>
         <li><a href='javascript:;'>关于奥美</a>
           <div className='nav_list'>
             <p><Link to="/vision">奥美愿景</Link></p>
@@ -131,9 +141,12 @@ class Better extends Component {
       </div>   
       <Route exact path="/" component={Home}/>
       <Route path="/works" component={Works}/>
+      <Route path="/points" component={Points}/>
       <Route path="/vision" component={Vision}/>
+      <Route path="/servies" component={Servies}/>    
       <Route path="/history" component={History}/>
       <Route path="/team" component={Team}/>
+      <Route path="/press" component={Press}/>
       <Route path="/live" component={Live}/>
       <Route path="/contant" component={Contant}/>
       <div className='footer_box'>

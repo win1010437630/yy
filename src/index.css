@@ -1,3 +1,18 @@
+.wrap{
+	width: 1100px;
+	margin: 0 auto;
+}
+@media screen and (max-width:1200px) and (min-width:950px){
+	.wrap{
+		width: 950px;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width:949px){
+	.wrap{
+		width: 100%;
+	}
+}
 body{
 	font-size: 13px;
 	color: #1a1a1a;
